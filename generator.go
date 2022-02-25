@@ -20,6 +20,7 @@ package namegenerator
 import (
 	"fmt"
 	"math/rand"
+	"strings"
 )
 
 // Generator ...
@@ -37,7 +38,7 @@ func (rn *NameGenerator) Generate() string {
 	randomAdjective := ADJECTIVES[rn.random.Intn(len(ADJECTIVES))]
 	randomNoun := NOUNS[rn.random.Intn(len(NOUNS))]
 
-	randomName := fmt.Sprintf("%v-%v", randomAdjective, randomNoun)
+	randomName := fmt.Sprintf("%v%v", strings.Title(randomAdjective), strings.Title(randomNoun))
 
 	return randomName
 }

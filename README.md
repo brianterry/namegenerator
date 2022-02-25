@@ -3,25 +3,18 @@
 A random name generator (for projects, servers, cluster nodes, etc ...)
 implementation in Golang.
 
-## Badges
-
-[![License][License-Image]][License-URL]
-[![CircleCI Status][CircleCI-Image]][CircleCI-URL]
-[![Coverage Report][Coverage-Image]][Coverage-URL]
-[![Go Report Card][GoReportCard-Image]][GoReportCard-URL]
-[![CII Best Practices][CII-Image]][CII-URL]
-[![GoDoc][GoDoc-Image]][GoDoc-URL]
+forked from [github.com/goombaio/namegenerator](http://github.com/goombaio/namegenerator). Updates the name format to be compatible with CloudFormation
 
 ## Install
 
 ```bash
-go get github.com/goombaio/namegenerator
+go get github.com/brianterry/namegenerator
 ```
 
 You can also update an already installed version:
 
 ```bash
-go get -u github.com/goombaio/namegenerator
+go get -u github.com/brianterry/namegenerator
 ```
 
 ## Example of use
@@ -30,7 +23,7 @@ go get -u github.com/goombaio/namegenerator
 package main
 
 import (
-    "github.com/goombaio/namegenerator"
+    "github.com/brianterry/namegenerator"
 )
 
 func main() {
@@ -58,16 +51,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-[License-Image]: https://img.shields.io/badge/License-Apache-blue.svg
-[License-URL]: http://opensource.org/licenses/Apache
-[CircleCI-Image]: https://circleci.com/gh/goombaio/namegenerator.svg?style=svg
-[CircleCI-URL]: https://circleci.com/gh/goombaio/namegenerator
-[Coverage-Image]: https://codecov.io/gh/goombaio/namegenerator/branch/master/graph/badge.svg
-[Coverage-URL]: https://codecov.io/gh/goombaio/namegenerator
-[GoReportCard-Image]: https://goreportcard.com/badge/github.com/goombaio/namegenerator
-[GoReportCard-URL]: https://goreportcard.com/report/github.com/goombaio/namegenerator
-[CII-Image]: https://bestpractices.coreinfrastructure.org/projects/2237/badge
-[CII-URL]: https://bestpractices.coreinfrastructure.org/projects/2237
-[GoDoc-Image]: https://godoc.org/github.com/goombaio/namegenerator?status.svg
-[GoDoc-URL]: http://godoc.org/github.com/goombaio/namegenerator

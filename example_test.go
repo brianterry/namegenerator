@@ -34,5 +34,5 @@ func ExampleNameGenerator() {
 	fmt.Println(name)
 
 	// // Output:
-	// // autum-waterfall
+	// // AutumWaterfall
 }
